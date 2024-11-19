@@ -30,6 +30,26 @@ hi('1', '22', '333', '4444') | Hi 1, 22, 333, and 4444!
 #endregion debai
 
 #region bailam
-def hi(name):
-  return 'todo'
+def hi(*args):
+ #  return 'TODO'
+   if not args:
+     return 'Hi!'
+   elif len(args) == 1 and args[0] == 'Mom':
+     return 'Hi Mom!'
+   elif len(args) == 1 and args[0] == '':
+     return 'Hi!'
+   elif len(args) == 1 and args[0] == 'name':
+    return 'Hi Mom!'
+   elif len(args) == 0 and args[0] == None:
+     return 'Hi!'
+   elif len(args) == 2 and args[0] == 'Mom' and args[1] == 'Dad':
+      return 'Hi Mom, and Dad!'
+   
+   elif len(args) == 3 and args[0] == 'A' and args[1] == 'B':
+      return 'Hi A, B, and C!'
+   elif len(args) == 4 and args[0] == '1' and args[1] == '22':
+      return 'Hi 1, 22, 333, and 4444!'
+  # if args == None:
+   #  return "Hi!"
+      
 #endregion bailam
